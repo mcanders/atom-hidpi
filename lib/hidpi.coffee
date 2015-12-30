@@ -70,8 +70,7 @@ class Hidpi
     adjustedScreenHeight = screen.height * osScaleFactor
     manualResolutionScaleFactor = manualResolutions[''+adjustedScreenWidth+'x'+adjustedScreenHeight]
     previousScaleFactor = @currentScaleFactor
-    console.log(''+adjustedScreenWidth+'x'+adjustedScreenHeight)
-    console.log(manualResolutions)
+    console.log(''+adjustedScreenWidth+'x'+adjustedScreenHeight, manualResolutions)
     if manualResolutionScaleFactor
       @scale(manualResolutionScaleFactor)
     else if (adjustedScreenWidth > cutoffWidth) or (adjustedScreenHeight > cutoffHeight)
